@@ -1,0 +1,19 @@
+<div class="container">
+    <figure>
+      <img src="assets/img/logo_oswaldo.jpg" alt="logo fio cruz" height="50px" >
+    </figure>
+  <div class="buttons">
+    <button mat-raised-button  (click)="routeToPage('map')">Inicial
+      <i class="material-icons">speed</i>
+    </button>
+
+    <button mat-raised-button (click)="routeToPage('bar')">Curvas
+      <i class="material-icons">bar_chart</i>
+    </button>
+
+    <button mat-raised-button >Cluster
+      <i class="material-icons">timeline</i>
+    </button>
+  </div>
+</div>
+<router-outlet></router-outlet>

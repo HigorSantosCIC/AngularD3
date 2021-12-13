@@ -1,0 +1,14 @@
+body {
+  border: 10px solid black;
+  height:100vh;
+
+}
+.main-view {
+  display: flex;
+  flex-direction: row;
+  max-height: 800px;
+}
+a {
+  margin-right: 10px;
+}
+

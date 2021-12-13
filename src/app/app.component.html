@@ -1,6 +1,14 @@
-<header>
-  <h1>Angular + D3 - Basic Study</h1>
-</header>
-<app-bar></app-bar>
-<app-pie></app-pie>
-<app-scatter></app-scatter>
+<app-header> </app-header>
+  <app-internal-page>
+
+  <div class="main-view">
+    <a routerLink="/bar" routerLinkActive="selected">Bar</a>
+    <a routerLink="/pie" routerLinkActive="selected">Pie</a>
+    <a routerLink="/scatter" routerLinkActive="selected">Scatter</a>
+    <a routerLink="/map" routerLinkActive="selected">Map</a>
+    <a routerLink="/highchart" routerLinkActive="selected">HighChart</a>
+  </div>
+  <router-outlet></router-outlet>
+  </app-internal-page>
+<app-footer> </app-footer>
+

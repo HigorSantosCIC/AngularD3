@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$icoda-primary: mat.define-palette(mat.$indigo-palette);
+$icoda-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$icoda-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$icoda-theme: mat.define-light-theme((
+  color: (
+    primary: $icoda-primary,
+    accent: $icoda-accent,
+    warn: $icoda-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($icoda-theme);
+
+.main-body {
+  background-color: white;
+  width: 100vw;
+  max-width: 80vw;
+}
